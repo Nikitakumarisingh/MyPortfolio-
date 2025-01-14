@@ -4,17 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <div class="container">
-      <button id="mode-toggle">Dark Mode</button>
-  </div>
-  <script src="script.js"></script>
     <nav id="desktop-nav">
-      <div class="logo">Nikita Kumari</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -32,33 +27,31 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
       </div>
     </nav>
+    <div id="animated-lines-container"></div>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile pick.png" alt="Nikita Kumari profile picture" />
+        <img src="assets\face.png" alt="Nikita Kumari profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Nikita Kumari</h1>
-        <p class="section__text__p2">Web Developer</p>
+        <h1 class="title"><extra-bold>Nikita Kumari</extra-bold></h1>
+        <p class="section__text__p2">
+          <span class="dynamic-text"></span><span class="cursor">|</span>
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('https://d.docs.live.net/93a5cc5c1cea6f1e/Desktop/Nikita/Nikita%20Resume.docx')"
+            onclick="window.open('https://www.canva.com/design/DAGUsBG7Hs0/NiE8fakZ3F4cLCnoapJtNA/view?utm_content=DAGUsBG7Hs0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8f0f406695')"
           >
-            Download CV
+            Resume
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
+        <br>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -72,8 +65,7 @@
             class="icon"
             onclick="location.href='https://github.com/Nikitakumarisingh'"
           />
-        </div>
-      </div>
+        </div>        
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -81,7 +73,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about me .png"
+            src="./assets/Nikita ji.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -94,8 +86,10 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
-              <p>Team led of nationally regonized project <br />Web Development <br /> Machine Learning <br />   Project Presentation </p>
+              <h3>Achievements</h3>
+              <p>SIH’23 Winner (Ministry of Jal Sakti)<br />
+                SIH’24 Finalist (ISRO)<br />
+                Code-A-Thon’24 Winner (ABESIT)<br />
             </div>
             <div class="details-container">
               <img
@@ -104,19 +98,14 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.tech (IT) <br /> ABES Institute Of Technology </p>
+              <p>B-tech (Information Technology)<br />
+                Certification in Google Cloud Computing Foundation & Generative A</p>
             </div>
           </div>
           <div class="text-container">
-            <p>
-              I'm a passionate second-year engineering student at ABESIT, Ghaziabad. My journey in technology took a significant leap when I was honored as the official winner of SMART INDIA HACKATHON 2023. This achievement not only fueled my drive but also reinforced my commitment to excellence in everything I do. <br />
-              
-              <br />
-              With a keen interest in machine learning and a budding curiosity in AI, I am always on the lookout for innovative solutions to complex problems. My skills also extend to web development, where I enjoy creating seamless digital experiences. I thrive in fast-paced, ever-evolving environments and am dedicated to staying at the forefront of the latest digital trends and technologies. <br />
-              <br />
-              Beyond the world of coding and algorithms, I find joy in video editing and playing the guitar. These hobbies not only allow me to express my creativity but also bring a balance to my tech-focused life. <br />
-              I am actively seeking challenging opportunities where I can leverage my skills, knowledge, and continuous learning to make a meaningful impact. Let's connect and create something extraordinary together! 
-            </p>
+          <p>Hello, I’m <strong>Nikita Kumari</strong>, a passionate developer who loves transforming ideas into impactful digital experiences. With a strong foundation in frontend development, UI/UX design, and machine learning, I thrive at the intersection of creativity and technology.
+            Driven by curiosity and a problem-solving mindset, I’m constantly exploring innovative solutions and striving to deliver clean, efficient, and user-friendly designs. Beyond the code, I’m a team player who values collaboration and bringing visions to life with precision and purpose.</p>  
+          <p><strong>Let’s create something extraordinary together!</strong></p>
           </div>
         </div>
       </div>
@@ -129,11 +118,11 @@
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Experience & Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Intermediate to Experienced</h2>
             <div class="article-container">
               <article>
                 <img
@@ -175,25 +164,14 @@
                   class="icon"
                 />
                 <div>
-                  <h3>UI/UX Designer</h3>
+                  <h3>Machine Learning</h3>
                   <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Basic to Intermediate</h2>
             <div class="article-container">
               <article>
                 <img
@@ -202,7 +180,18 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SQL</h3>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -213,7 +202,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>UI/UX Design</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -224,19 +213,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Machine learning</h3>
-                  <p>Basics</p>
+                  <h3>React</h3>
+                  <p>Basic</p>
                 </div>
               </article>
             </div>
@@ -263,19 +241,19 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Digital technology to address NRW</h2>
+            <h2 class="experience-sub-title project-title">Flow Tech Repairs</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Nikitakumarisingh/SIH-project'"
+                onclick="location.href='https://github.com/Nikitakumarisingh/SIH-project.git'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/7UWOMumOrjQ?si=ir_1WT-MTd3T5PC_'"
+                onclick="location.href='https://youtu.be/7UWOMumOrjQ?si=0TvrrcyOzRhmB0Fz'"
               >
-                Live Demo
+                Project Video
               </button>
             </div>
           </div>
@@ -291,15 +269,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/utkarshcse2026/WasteGuard"
+                onclick="location.href='https://github.com/Nikitakumarisingh'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=GouxHrRMZ7E'"
+                onclick="location.href='https://youtu.be/GouxHrRMZ7E?si=iMsbXR01qrtyvdTa'"
               >
-                Live Demo
+              Project Video
               </button>
             </div>
           </div>
@@ -311,19 +289,19 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Cheaf Connect</h2>
+            <h2 class="experience-sub-title project-title">Seg Map</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Nikitakumarisingh'"
+                onclick="location.href='https://geo-mesh-front.vercel.app/'"
               >
-                Github
+                Demo
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Nikitakumarisingh'"
+                onclick="location.href='https://youtu.be/BIHoAPoIE4Q'"
               >
-                Live Demo
+              Project Video
               </button>
             </div>
           </div>
@@ -350,27 +328,77 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
+            src="./assets/linktr.png"
+            alt="Linktr icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/nikita-kumari-58455b284/">LinkedIn</a></p>
+          <p><a href="https://linktr.ee/nikitakumarisingh">Socials</a></p>
         </div>
       </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+     <footer class="footer">
+    <div class="container">
+      <div class="grid-container">
+        <!-- About Section -->
+        <div class="section">
+          <p class="text">Thank you for exploring my portfolio! Feel free to connect with me on social media.</p>
+          <div class="location-wrapper">
+            <span class="icon">&#x1F4CD;</span>
+            <span>New Delhi, India</span>
+          </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 nikita-kumari All Rights Reserved.</p>
-    </footer>
+ <!-- Quick Links -->
+        <div class="section">
+          <h3 class="heading">Quick Links</h3>
+          <div class="link-container">
+            <div class="link" onclick="scrollToSection('about')">
+              <span class="icon">&#x1F464;</span>
+              <span>About Me</span>
+            </div>
+            <div class="link" onclick="scrollToSection('skills')">
+              <span class="icon">&#x2615;</span>
+              <span>Skills</span>
+            </div>
+            <div class="link" onclick="scrollToSection('academic')">
+              <span class="icon">&#x1F393;</span>
+              <span>Education</span>
+            </div>
+            <div class="link" onclick="scrollToSection('project')">
+              <span class="icon">&#x1F4BB;</span>
+              <span>Projects</span>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="section">
+          <h3 class="heading">Get in Touch</h3>
+          <div class="link-container">
+            <a href="tel:+7065924258" class="link">
+              <span class="icon">&#x260E;</span>
+              <span>(+91) 7065924258</span>
+            </a>
+            <a href="mailto:nikit.abesit2026@gmail.com" class="link">
+              <span class="icon">&#x2709;</span>
+              <span>nikit.abesit2026@gmail.com</span>
+            </a>
+          </div>
+          <!-- Social Links -->
+          <div class="social-container">
+            <a href="https://github.com/Nikitakumarisingh" class="social-link" aria-label="Github">&#x1F4BB;</a>
+            <a href="https://www.linkedin.com/in/nikita-kumari-58455b284/" class="social-link" aria-label="LinkedIn">&#x1F465;</a>
+            <a href="https://medium.com/@nikitasmcsnes" class="social-link" aria-label="Medium">&#x1F310;;</a>
+            <a href="https://x.com/nikitasmcsnes" class="social-link" aria-label="Twitter">&#x1F426;</a>
+            <a href="https://www.instagram.com/nikitaaayrr/" class="social-link" aria-label="Instagram">&#x1F47E;</a>
+          </div>
+          <!-- Copyright Bar -->
+          <div class="divider">
+          <div class="copyright-container">
+          <p class="copyright-text">© 2025 Nikita-kumari-Singh All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollUpBtn" title="Go to top">↑</button>
     <script src="script.js"></script>
   </body>
 </html>
